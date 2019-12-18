@@ -1,0 +1,22 @@
+[
+    {
+        "text": "Наши преимущества",
+        "href": "#home-advantages"
+    },
+    {
+        "text": "Услуги",
+        "href": "#home-tarif"
+    },
+    {
+        "text": "Галерея",
+        "href": "#home-galery"
+    },
+    {
+        "text": "Отзывы",
+        "href": "#home-testimonals"
+    },
+    {
+        "text": "Контакты",
+        "href": "#footer"
+    }
+]

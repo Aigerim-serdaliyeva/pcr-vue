@@ -1,0 +1,37 @@
+@mixin sized($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin bgcover() {
+    background-size: cover;
+    background-position:center;
+}
+
+@mixin flex($jc: flex-start, $ai: flex-start, $direction: row) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $direction;
+}
+
+@mixin pseudo() {
+    position: absolute;
+    content: '';    
+}
+
+@mixin fonted($font-size, $line-height) {
+    font-size: $font-size;
+    line-height: $line-height
+}
+
+@mixin overlay($background) {
+    &::after {
+        content: '';
+        position: absolute; top: 0; left: 0;     
+        @include sized(100%, 100%);
+        background: $background;   
+        pointer-events: none;     
+        z-index: 1;
+    }    
+}

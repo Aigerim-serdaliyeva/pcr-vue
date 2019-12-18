@@ -1,0 +1,77 @@
+html {
+    font-family: sans-serif;    
+    font-size: 16px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: transparent;    
+}
+
+input {
+    border: none; 
+    background: transparent;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    color: #000;    
+}
+
+ul,li {
+    list-style-type: none;
+}
+
+
+@media #{$desktop} {
+    .mob {
+        display: none !important;
+    }
+    .main-container {    
+        max-width: 100%;
+        width: rem(1300);    
+    }
+}
+
+@media #{$mobile} {
+    .main-container {        
+        padding: 0 rem(30);
+        text-align: center;
+    }        
+    .desk {
+        display: none !important;
+    }
+    html {
+        font-size: 12px;
+    }    
+}
+
+// *** hover input
+::-webkit-input-placeholder { opacity: 1; -webkit-transition: opacity .5s; transition: opacity .5s; }  /* Chrome <=56, Safari < 10 */
+:-moz-placeholder { opacity: 1; -moz-transition: opacity .5s; transition: opacity .5s; } /* FF 4-18 */
+::-moz-placeholder { opacity: 1; -moz-transition: opacity .5s; transition: opacity .5s; } /* FF 19-51 */
+:-ms-input-placeholder { opacity: 1; -ms-transition: opacity .5s; transition: opacity .5s; } /* IE 10+ */
+::placeholder { opacity: 1; transition: opacity .5s; } /* Modern Browsers */
+
+*:focus::-webkit-input-placeholder { opacity: 0; } /* Chrome <=56, Safari < 10 */
+*:focus:-moz-placeholder { opacity: 0; } /* FF 4-18 */
+*:focus::-moz-placeholder { opacity: 0; } /* FF 19-50 */
+*:focus:-ms-input-placeholder { opacity: 0; } /* IE 10+ */
+*:focus::placeholder { opacity: 0; } /* Modern Browsers */
+// *** /hover input
+
+.modal-success-enter-active, .modal-success-leave-active {
+    transition: opacity .5s;
+  }
+  .modal-success-enter, .modal-success-leave-to /* .modal-success-leave-active до версии 2.1.8 */ {
+    opacity: 0;
+  }

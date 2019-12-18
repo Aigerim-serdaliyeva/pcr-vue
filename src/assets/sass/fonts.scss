@@ -1,0 +1,43 @@
+$fontPath: '~@/assets/fonts/';
+
+@mixin createFont($name, $weight, $src) {
+    @font-face {
+        font-family: $name;
+        font-display: swap;
+        font-weight: $weight;
+        src: url($fontPath + '#{$src}.woff');
+        // src: url($fontPath + '#{$src}.ttf')
+    }
+}
+
+@include createFont(
+    Roboto, 400, 'Roboto/Roboto-Regular'
+);
+
+@include createFont(
+    Roboto, 700, 'Roboto/Roboto-Bold' 
+);
+
+@include createFont(
+    Roboto, 900, 'Roboto/Roboto-Black' 
+);
+
+@include createFont(
+    OpenSans, 400, 'Open_Sans/OpenSans-Regular' 
+);
+
+@include createFont(
+    OpenSans, 600, 'Open_Sans/OpenSans-SemiBold' 
+);
+
+@include createFont(
+    OpenSans, 700, 'Open_Sans/OpenSans-Bold' 
+);
+
+@include createFont(
+    BebasNeue, 400, 'BebasNeue/BebasNeueRegular' 
+);
+
+@include createFont(
+    BebasNeue, 700, 'BebasNeue/BebasNeueBold' 
+);

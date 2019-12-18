@@ -1,0 +1,14 @@
+@import "./config/variables.scss";
+@import "./config/mixins.scss";
+@import "./config/functions.scss";
+
+// Reset
+@import "_reset.scss";
+
+@import "./fonts.scss";
+
+// Общие классы
+@import "./config/custom.scss";
+
+// Глобальные стили
+@import "./global.scss";

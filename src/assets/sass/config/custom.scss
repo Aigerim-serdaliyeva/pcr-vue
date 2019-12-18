@@ -1,0 +1,150 @@
+// Bg and col
+
+// .brownbg {
+//     background: $brownbg;
+// }
+
+// .maincol {
+//     color: $maincol;
+//     a {
+//         color: $maincol;
+//     }
+// }
+
+
+// Fonts
+.rob-900 {
+    font-family: Roboto;
+    font-weight: 900;
+}
+
+.rob-400 {
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.rob-700 {
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+.opsans-700 {
+    font-family: OpenSans;
+    font-weight: 700;
+}
+
+.opsans-400 {
+    font-family: OpenSans;
+    font-weight: 400;
+}
+
+.opsans-600 {
+    font-family: OpenSans;
+    font-weight: 600;
+}
+
+.bebas-400 {
+    font-family: BebasNeue;
+    font-weight: 400;
+}
+
+.bebas-700 {
+    font-family: BebasNeue;
+    font-weight: 700;
+}
+
+// Custom
+
+.mr-10 {
+    margin-right: rem(10);
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.tac {
+    text-align: center;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pos-a {
+    position: absolute; 
+}
+
+.default-pad {
+    padding: rem(90) 0;
+}
+
+// Buttons
+
+.btn-brown {
+    color: #fff;    
+    border-radius: 73px;
+    background: #7E251E;
+    box-shadow: 0px 14px 32px rgba(67, 66, 66, 0.4);    
+    font-family: OpenSans;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        background: #E9B42E;
+    }
+    &:active {
+        background: #51110C;
+    }
+}
+
+.btn-brown-large {
+    padding: rem(22) rem(69);
+    font-size: rem(24);
+}
+
+.btn-brown-medium {
+    padding: rem(17) rem(65);    
+    font-size: rem(18);
+}
+
+.no-m {
+
+}
+
+.col-white {
+    color: #fff;
+}
+
+.team-success-enter-active, .team-success-leave-active {
+    transition: opacity .5s;
+  }
+  .team-success-enter, .team-success-leave-to /* .team-success-leave-active до версии 2.1.8 */ {
+    opacity: 0;
+  }
+
+
+.menu_hamburger_white {
+    svg {
+        rect {
+            fill: #fff !important;
+        }
+    }
+}
+
+.thank-you {
+
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+.col-yel {
+    color: $yellow;
+}
+
+.bg-yel {
+    background: $yellow;
+}
